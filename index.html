@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Automation Inprogress</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+        
+        .mainBody {
+            width: 700px;
+            height: auto;
+            background: #fff;
+        }
+        
+        .image {
+            position: relative;
+        }
+        
+        .image:after {
+            content: '\A';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #1f1e1e99;
+            opacity: 0;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+        
+        .image:hover:after {
+            opacity: 1;
+        }
+        
+        .left-content {
+            margin-top: 185px;
+        }
+        
+        .text-chocolate {
+            color: chocolate;
+        }
+        
+        .click-button {
+            width: 100%;
+        }
+        
+        .subBody {
+            background: #242b35;
+        }
+        
+        .mainForm {
+            background-color: black;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row" style="width: 100%;">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <div class="mainBody mt-3 mb-3">
+                <div class="image">
+                    <img src="https://wallpaperaccess.com/full/6241151.jpg" alt="" style="width: 700px;height: 300px;">
+                </div>
+                <div class="container-fluid subBody">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-5">
+                            <div class="left-content">
+                                <div class="container">
+                                    <img src="https://www.zoho.com/sites/default/files/projects/automation-check-in-.png" alt="" style="width: 180px;">
+                                    <div class="mt-3 ms-3">
+                                        <h5 class="text-danger">Automation Work</h5>
+                                        <span class="text-muted" style="font-size: 13px;">In Progress</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mainForm mt-3 mb-3">
+                            <div class="right-content">
+                                <div class="container">
+                                    <div class="mt-2 mb-2">
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">Topic Details :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Change_Name + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">Developer :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Developer + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">WEB Automation :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Web_Automation + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">WEB Automation Status :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Web_Automation_Status + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">WEB Automation Tester :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Web_automation_Developer + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">WEB Automation Tester Comments :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.WEB_Tester_comments + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 ms-3">
+                                            <h6 class="text-chocolate">Manual Tester :</h6>
+                                            <span class="text-white" style="font-size: 13px;">" + input.Tester + "</span>
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3 click-button">
+                                            <button class="btn btn-warning w-100 btn-sm">Click Here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
